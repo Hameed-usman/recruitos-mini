@@ -1,0 +1,22 @@
+[
+  {
+    "record_id": "DEC_1789288024962_BE71A2",
+    "timestamp": "2026-09-13T08:27:04.962Z",
+    "candidate_name": "Alex Rivers",
+    "overall_score": 95,
+    "recommendation": "INTERVIEW",
+    "human_decision": "APPROVED",
+    "reviewer_notes": "Strong alignment with requirements",
+    "criteria_summary": null
+  },
+  {
+    "record_id": "DEC_1789288682072_4DB958",
+    "timestamp": "2026-09-13T08:38:02.072Z",
+    "candidate_name": "Alex Rivers",
+    "overall_score": 95,
+    "recommendation": "INTERVIEW",
+    "human_decision": "APPROVED",
+    "reviewer_notes": "Top-tier candidate, fits fintech pod",
+    "criteria_summary": "Alex Rivers is a strong match for the role, bringing 6 years of full stack experience with deep expertise in React, TypeScript, Node.js, and AWS ECS. They have demonstrated production backend experience by leading the migration of a high-volume core billing engine."
+  }
+]
