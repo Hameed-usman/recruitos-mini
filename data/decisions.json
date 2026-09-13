@@ -28,5 +28,25 @@
     "human_decision": "APPROVED",
     "reviewer_notes": "",
     "criteria_summary": "Alex Rivers demonstrates 6 years of full stack software engineering experience with production React, TypeScript, Node.js, and AWS ECS architectures. All role criteria are satisfied with high confidence."
+  },
+  {
+    "record_id": "DEC_1789316701445_4DEF6D",
+    "timestamp": "2026-09-13T16:25:01.446Z",
+    "candidate_name": "Alex Rivers",
+    "overall_score": 95,
+    "recommendation": "INTERVIEW",
+    "human_decision": "APPROVED",
+    "reviewer_notes": "",
+    "criteria_summary": "Alex Rivers demonstrates 6 years of full stack software engineering experience with production React, TypeScript, Node.js, and AWS ECS architectures. All role criteria are satisfied with high confidence."
+  },
+  {
+    "record_id": "DEC_1789317414444_BE9B17",
+    "timestamp": "2026-09-13T16:36:54.444Z",
+    "candidate_name": "Alex Rivers",
+    "overall_score": 95,
+    "recommendation": "INTERVIEW",
+    "human_decision": "APPROVED",
+    "reviewer_notes": "strong candidate ",
+    "criteria_summary": "Alex Rivers demonstrates 6 years of full stack software engineering experience with production React, TypeScript, Node.js, and AWS ECS architectures. All role criteria are satisfied with high confidence."
   }
 ]
