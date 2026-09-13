@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "verify": "tsx scripts/verify-v0.ts"
+    "verify": "tsx scripts/verify-v0.ts",
+    "evaluate": "tsx --env-file=.env.local scripts/run-evaluation.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.1.18",
+    "@ai-sdk/groq": "^1.2.9",
     "ai": "^4.1.45",
     "dotenv": "^16.4.7",
     "next": "^14.2.24",
