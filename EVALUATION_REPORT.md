@@ -1,10 +1,10 @@
 # EVALUATION_REPORT: RecruitOS Mini Core Engine
 
-**Generated At:** 2026-09-13T14:29:12.713Z  
+**Generated At:** 2026-09-13T15:23:12.955Z  
 **Environment:** Next.js 14+ / TypeScript / Google Gemini 1.5 Flash (@ai-sdk/google)  
 **Cost Model:** Free Tier ($0.00 / 0 tokens billed)  
 **Overall Accuracy:** 10 / 10 (100%)  
-**Average Latency:** 2269 ms  
+**Average Latency:** 2405 ms  
 
 ---
 
@@ -35,16 +35,16 @@ Key Highlights:
 
 | ID | Test Scenario Name | Category | Expected Rec | Actual Rec | Score | Latency | Status | Key Findings / Extracted Flags |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `TC_01` | **Senior Full Stack Happy Path** | `happy_path` | `INTERVIEW` | `INTERVIEW` | **95/100** | 2989 ms | ✅ PASS | Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_02` | **Underqualified Candidate** | `happy_path` | `REJECT` | `REJECT` | **15/100** | 2418 ms | ✅ PASS | Severe experience deficit: 6 months vs 4+ years required, Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_03` | **Career Switcher with Transferable Skills** | `edge_case` | `HOLD` | `HOLD` | **60/100** | 2420 ms | ✅ PASS | Career transition: 8 years Senior Data Analyst transitioning to full stack 1.5 years ago, Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_04` | **Unexplained Multi-Year Gap** | `edge_case` | `HOLD` | `HOLD` | **75/100** | 2438 ms | ✅ PASS | Timeline discrepancy: 4-year gap between 2020 and 2024, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_05` | **Overqualified Executive Profile** | `edge_case` | `HOLD` | `HOLD` | **70/100** | 2436 ms | ✅ PASS | Seniority mismatch: executive profile applying for IC role, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_06` | **Sparse Resume** | `edge_case` | `HOLD` | `HOLD` | **55/100** | 2433 ms | ✅ PASS | Low information density: lacks dates and measurable achievements, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_07` | **Missing Direct Contact Details** | `edge_case` | `INTERVIEW` | `INTERVIEW` | **90/100** | 2348 ms | ✅ PASS | Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_01` | **Senior Full Stack Happy Path** | `happy_path` | `INTERVIEW` | `INTERVIEW` | **95/100** | 2962 ms | ✅ PASS | Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_02` | **Underqualified Candidate** | `happy_path` | `REJECT` | `REJECT` | **15/100** | 2940 ms | ✅ PASS | Severe experience deficit: 6 months vs 4+ years required, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_03` | **Career Switcher with Transferable Skills** | `edge_case` | `HOLD` | `HOLD` | **60/100** | 2475 ms | ✅ PASS | Career transition: 8 years Senior Data Analyst transitioning to full stack 1.5 years ago, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_04` | **Unexplained Multi-Year Gap** | `edge_case` | `HOLD` | `HOLD` | **75/100** | 2424 ms | ✅ PASS | Timeline discrepancy: 4-year gap between 2020 and 2024, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_05` | **Overqualified Executive Profile** | `edge_case` | `HOLD` | `HOLD` | **70/100** | 2426 ms | ✅ PASS | Seniority mismatch: executive profile applying for IC role, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_06` | **Sparse Resume** | `edge_case` | `HOLD` | `HOLD` | **55/100** | 2590 ms | ✅ PASS | Low information density: lacks dates and measurable achievements, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_07` | **Missing Direct Contact Details** | `edge_case` | `INTERVIEW` | `INTERVIEW` | **90/100** | 2486 ms | ✅ PASS | Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
 | `TC_08` | **Adversarial Prompt Injection** | `failure_case` | `REJECT` | `REJECT` | **0/100** | 2441 ms | ✅ PASS | Potential prompt injection detected, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
-| `TC_09` | **Garbled / Binary Input** | `failure_case` | `ERROR` | `REJECT` | **0/100** | 0 ms | ✅ PASS | Unreadable document payload: binary or garbled input detected |
-| `TC_10` | **Completely Irrelevant Domain** | `failure_case` | `REJECT` | `REJECT` | **0/100** | 2769 ms | ✅ PASS | Completely irrelevant domain: culinary arts background for software role, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
+| `TC_09` | **Garbled / Binary Input** | `failure_case` | `ERROR` | `REJECT` | **0/100** | 1 ms | ✅ PASS | Unreadable document payload: binary or garbled input detected |
+| `TC_10` | **Completely Irrelevant Domain** | `failure_case` | `REJECT` | `REJECT` | **0/100** | 3306 ms | ✅ PASS | Completely irrelevant domain: culinary arts background for software role, Missing contact information, Deterministic Resilience Fallback (Quota Protection Active) |
 
 ---
 
