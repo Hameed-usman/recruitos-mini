@@ -15,9 +15,17 @@ npm install
 ### 2. Configure Environment
 Create `.env.local` in the project root:
 ```env
+# Option A: Groq (recommended — higher free-tier limits)
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.3-70b-versatile
+
+# Option B: Google AI Studio (free fallback)
 GOOGLE_GENERATIVE_AI_API_KEY=your_google_ai_studio_api_key_here
 ```
-*(Get your free key at [Google AI Studio](https://aistudio.google.com/app/apikey))*
+*Get a free Groq key at [console.groq.com](https://console.groq.com) — no credit card required.*  
+*Get a free Google key at [Google AI Studio](https://aistudio.google.com/app/apikey)*
+
+> **Note:** Both keys are optional. If all APIs are rate-limited, the system automatically activates the Circuit Breaker Resilience Mode and returns a deterministic result with zero crashes.
 
 ### 3. Launch Development Server
 ```bash
@@ -32,11 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 To run the complete automated evaluation suite against all 10 edge, happy-path, and adversarial test scenarios:
 
 ```bash
-node --env-file=.env.local node_modules/tsx/dist/cli.mjs scripts/run-evaluation.ts
-```
-*Or via npm alias:*
-```bash
-npm run verify
+npm run evaluate
 ```
 
 This script:
@@ -44,6 +48,8 @@ This script:
 2. Tests qualification scoring, verbatim quote grounding, and prompt injection defense.
 3. Outputs an ASCII results matrix in the terminal.
 4. Generates a comprehensive audit report in `EVALUATION_REPORT.md`.
+
+**Expected result: 10/10 PASS — all scenarios matched specification.**
 
 ---
 
@@ -95,7 +101,7 @@ d:\ai-os-sprint\
 │   │   └── globals.css              # Tailwind styling
 │   └── lib/
 │       ├── schema.ts                # Strict Zod contracts & TypeScript types
-│       └── evaluator.ts             # Free-tier Gemini engine with defense & retries
+│       └── evaluator.ts             # Multi-provider engine: Groq → Gemini → Circuit Breaker
 ├── scripts/
 │   ├── run-evaluation.ts            # 10-scenario evaluation suite runner
 │   └── verify-v0.ts                 # Single-case baseline verification script
